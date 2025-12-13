@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* This is your existing button class with one new line added for smooth animation */
+.circle-button {
+  
+  /* Add this line to make the button press smooth */
+  transition: transform 0.1s ease-in-out;
+}
+
+/* This is the new rule that makes the button move down when clicked */
+.circle-button:active {
+  /* This moves the button 3 pixels down */
+  transform: translateY(3px);
+}
+
+body {
+  font-family: 'Skranji', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}

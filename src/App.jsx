@@ -50,7 +50,7 @@ function App() {
         </div>
 
         {/* --- BUTTON --- */}
-        <div className='absolute -bottom-[15%] right-[34%] z-30'>
+        <div className='absolute -bottom-[15%] right-[35%] z-30'>
           <button 
             onClick={handleSpin} 
             disabled={isSpinning} 

@@ -36,7 +36,7 @@ function App() {
         
         {/* --- SCREEN WINDOW (Grid of 3 Reels) --- */}
         
-        <div className='absolute top-[18%] left-[17%] w-[64%] h-[200px] flex flex-row overflow-hidden border-none outline-none z-20'>
+        <div className='absolute top-[17%] left-[17%] w-[64%] h-[200px] flex flex-row overflow-hidden border-none outline-none z-20'>
             
             {/* Reel 1 (No delay) */}
             <Reel targetNumber={results[0]} isSpinning={isSpinning} delay={0} />

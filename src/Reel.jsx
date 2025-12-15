@@ -67,7 +67,7 @@ const Reel = ({ targetNumber, isSpinning, delay }) => {
       </div>
       
       
-      <div className="absolute top-[80px] w-full h-[80px]  bg-yellow-100/10 pointer-events-none"></div>
+      <div className="absolute top-[80px] w-full h-[80px]  pointer-events-none"></div>
     </div>
   );
 };

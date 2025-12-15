@@ -50,23 +50,30 @@ function App() {
         </div>
 
         {/* --- BUTTON --- */}
-        <div className='absolute -bottom-[15%] right-[35%] z-30'>
-          <button 
-            onClick={handleSpin} 
-            disabled={isSpinning} 
-           className={`
-      transition-all duration-100 ease-in-out
-      active:translate-y-5
-      ${isSpinning ? ' translate-y-4 cursor-not-allowed' : 'cursor-pointer hover:brightness-110'}
-    `}
-            title='Click to spin'
-          >
-            <img src="/slot-button.png" 
-      alt="Spin Button" 
-      className="w-53 h-117 object-contain drop-shadow-xl"></img>
-          </button>
-        </div>
-
+        <div className='absolute bottom-[16%] right-[36%] z-30'>
+  <div className="w-[200px] h-[150px]  overflow-hidden relative">
+    
+    <button 
+      onClick={handleSpin} 
+      disabled={isSpinning} 
+      className={`
+        w-full h-full
+        transition-all duration-100 ease-in-out
+        active:translate-y-[60%]
+         ${isSpinning ? 'translate-y-[10%] cursor-not-allowed brightness-75' : 'translate-y-0 cursor-pointer hover:brightness-110'}
+      `}
+      title='Click to spin'
+    >
+      <img 
+        src="/slot-button.png" 
+        alt="Spin Button" 
+        
+        className="w-full h-full object-contain drop-shadow-xl"
+      />
+    </button>
+  
+  </div>
+</div>
       </div>  
     </div>
   )

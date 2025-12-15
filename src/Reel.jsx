@@ -25,27 +25,27 @@ const Reel = ({ targetNumber, isSpinning, delay }) => {
       setTransitionDuration('0s');
       setStripPosition(0);
 
-      // --- STEP 2: SPIN 
+      
       setTimeout(() => {
         const targetIndex = spinNumbers.length - 15 + (targetNumber - 1);
         const rawPosition = -(targetIndex * Num_Height);
         const centerPosition = rawPosition + Num_Height; 
 
-        // Ab animation time set karo
+        
         const duration = 4000 + delay; 
         setTransitionDuration(`${duration}ms`);
         
-        // Aur nayi position par jao
+     
         setStripPosition(centerPosition);
       }, 50);
 
     } 
-    // Note: 'else if' hata diya kyunki hum shuru mein hi reset kar rahe hain
+
   }, [isSpinning, targetNumber, delay]);
 
   return (
     <div className="relative overflow-hidden h-[180px] w-full">
-      {/* Moving Strip */}
+     
       <div 
         className="flex flex-col items-center w-full"
         style={{ 

@@ -21,7 +21,7 @@ const Reel = ({ targetNumber, isSpinning, delay }) => {
 
   useEffect(() => {
     if (isSpinning && targetNumber !== null) {
-      // --- STEP 1: 
+      
       setTransitionDuration('0s');
       setStripPosition(0);
 

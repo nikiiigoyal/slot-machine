@@ -52,7 +52,7 @@ const Reel = ({ targetNumber, isSpinning, delay }) => {
           transform: `translateY(${stripPosition}px)`,
           transitionProperty: 'transform',
           transitionDuration: transitionDuration,
-          transitionTimingFunction: 'cubic-bezier(0.25, 1, 0.5, 1)' // Mechanical ease-out
+          transitionTimingFunction: 'cubic-bezier(0.25, 1, 0.5, 1)' 
         }}
       >
         {spinNumbers.map((num, index) => (

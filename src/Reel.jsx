@@ -58,7 +58,7 @@ const Reel = ({ targetNumber, isSpinning, delay }) => {
         {spinNumbers.map((num, index) => (
           <div 
             key={index} 
-            className={`flex items-center   font-skranji justify-center font-bold ${numberColors[num]}`}
+            className={`flex items-center font-skranji justify-center font-bold ${numberColors[num]}`}
             style={{ height: `${Num_Height}px`, fontSize: '40px' }}
           >
             {num}

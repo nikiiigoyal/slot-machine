@@ -50,30 +50,26 @@ function App() {
         </div>
 
         {/* --- BUTTON --- */}
-        <div className='absolute bottom-[16%] right-[36%] z-30'>
-  <div className="w-[200px] h-[150px]  overflow-hidden relative">
-    
-    <button 
-      onClick={handleSpin} 
-      disabled={isSpinning} 
-      className={`
-        w-full h-full
-        transition-all duration-100 ease-in-out
-        active:translate-y-[60%]
-         ${isSpinning ? 'translate-y-[10%] cursor-not-allowed brightness-75' : 'translate-y-0 cursor-pointer hover:brightness-110'}
-      `}
-      title='Click to spin'
-    >
-      <img 
-        src="/slot-button.png" 
-        alt="Spin Button" 
-        
-        className="w-full h-full object-contain drop-shadow-xl"
-      />
-    </button>
-  
-  </div>
-</div>
+        <div className="overflow-hidden absolute bottom-[26%] left-[18%] w-[150px] h-[51px] z-30">
+        <button
+          onClick={handleSpin}
+          disabled={isSpinning}
+          className="transition-transform duration-100 active:translate-y-[14px] disabled:opacity-80 disabled:cursor-not-allowed group"
+        >
+          <img
+            src="/slot-button.png"
+            width={150}
+            height={51}
+            alt="Spin!"
+            className={`${!(isSpinning) ? "group-hover:brightness-110" : ""} transition-all`}
+          />
+          {/* {isPending && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/20 rounded-[14px]">
+              <Loader2 className="w-6 h-6 text-white animate-spin" />
+            </div>
+          )} */}
+        </button>
+      </div>
       </div>  
     </div>
   )
